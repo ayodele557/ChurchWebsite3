@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewpoort" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <!-- header section -->
     <header>
         <h1>BACK TO HIS GLORY</h1>
         
         <nav>
             <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#sermons">Sermons</a></li>
+                <li><a href="#prayer">Prayer</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <Section Class="hero">
-        <h2>Welcome To Back To His Glory Church.</h2>
-        <p>A place of worship, love and transformation.</p>
+    <button id="darkModeBtn">🌙 Dark Mode</button>
 
-        <a href="#" class="hero-btn">Join Us This Sunday</a>
-    </Section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome To Back To HIs Glory.</h2>
+        <p>A place of worship, love and prayer, where behold Him from glory to glory.</p>
+
+        <a href="#" class="hero-btn">Join Us every sunday</a>
+    </section>
 
     <!-- Service Times -->
     <section>
@@ -39,7 +43,7 @@
              <div class="card">
                 <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65" alt="Sunday Worship">
                 <h3>Sunday Worship</h3>
-                <p>9:00 AM</p>
+                <p>9:00AM</p>
              </div>
 
              <div class="card">
@@ -51,7 +55,7 @@
              <div class="card">
                 <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65" alt="Sunday Worship">
                 <h3>Youth Service</h3>
-                <p>Friday - 5:00 PM</p>
+                <p>evry second sunday - 3:00 PM</p>
              </div>
 
         </div>
@@ -79,22 +83,88 @@
      </Section>
 
     <!-- Events -->
-    <section>
+    <section id="events">
         <h2>Upcoming Event</h2>
         <p>Youth Revival night - July 25</p>
     </section>
 
     <!-- Contact -->
-     <section>
+     <section id="sermons">
         <h2>Contact Us</h2>
-        <p>Email: BTHGEM@email.com</p>
+        <p>
+            <a href="mailto:dayodle557@gmail.com">
+                david@gmail.com
+            </a>
+        </p>
      </section>
 
+    <!-- sermons -->
+     <section id="sermons">
+        <h2>Recent Sermons</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>The power of prayer</h3>
+                <p>pastor Ayodele</p>
+                <a href="#">watch sermon</a>
+            </div>
+
+            <div class="card">
+                <h3>Walking with God</h3>
+                <p>pastor ayodele</p>
+                <a href="#">watch sermon</a>
+            </div>
+
+        </div>
+     </section>
+
+     <section id="verse">
+        <h2>Daily bible Verse</h2>
+
+        <div class="verse-box">
+            <p id="dailyVerse"></p>
+        </div>
+     </section>
+
+     <section id="prayer">
+        <h2>prayer request</h2>
+
+        <form>
+            <input type="text" placeholder="Your name">
+
+            <textarea
+                placeholder="Enter your prayer request"
+                rows="5">
+            </textarea>
+
+            <button type="submit">
+                send prayer request
+            </button>
+        </form>
+     </section>
+
+     <a href="https://wa.me/2347039989320"
+        classd="whatsapp-btn"
+        target="_blank">
+        💬
+    </a>
+
+    <section id="countdown">
+        <h2>Next Youth Revival</h2>
+        <p id="timer"></p>
+    </section>
+
+   
     <!-- Footer -->
     <footer class="footer">
         <p>Back To His Glory</p>
         <p>Ayobo, Lagos</p>
         <p>@ 2026 All Right Reserved</p>
     </footer>
+
+    <script src="script.js"></script>
+
+
 </body>
 </html>
